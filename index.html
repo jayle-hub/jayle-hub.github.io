@@ -1,17 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login | DAR - RMS</title>
+    <link rel="icon" href="assets/img/DAR-Logo.png">
 </head>
-<body>
-  <div class="text">
-    <img class="img" src="https://assets.brandfolder.com/pl546j-7le8zk-btwjnu/view@2x.png?v=1586891797" /></div>
-  <div id="particles-js">
 
-  </div>
-  <script src="js/main.js"></script>
+<body>
+    
+    <div class="container" id="container">
+        <div class="form-container sign-in">
+            <form>
+                <h1>Login</h1>
+                <label for="email" class="email">Username or Email</label>
+                <input type="email" placeholder="DARUsername or example@gmail.com">
+                <label for="email">Password</label>
+                <input type="password" placeholder="Password">
+                <a href="#" id="forgot">Forgot Password?</a>
+                <button>Login</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <div class="logo">
+                        
+                        <img src="assets/img/DAR-Logo.png">
+                    </div>
+                    <h1>Register</h1>
+                    <p>Contact the Department's Record Section Admin for further instructions. Thank you!</p>
+                    <button class="hidden" id="login">Login</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <div class="logo">
+                        <img src="assets/img/DAR-Logo.png">
+                    </div>
+                    <h1>Records System</h1>
+                    <p>Welcome! We encode, manage, and organize data records.</p>
+                    <button class="hidden" id="register">No Account?</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
